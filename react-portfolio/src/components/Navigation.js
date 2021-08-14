@@ -4,7 +4,38 @@ import {NavLink} from 'react-router-dom';
 import avatar from '../images/avatar.png';
 
 const NavigationStyled = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-right: 3px solid var(--borderColor);
 
+  .avatar{
+    width: 80%;
+    border-bottom: 1px solid var(--borderColor);
+    text-align: center;
+    padding: 2rem 0;
+    img{
+      width: 100%;
+      border-radius: 50%;
+      border: 8px solid var(--borderColor);
+     
+    }
+
+    .nav-items{
+      width: 100%;
+      text-align:center;
+      li{
+        display: block;
+        a{
+          display: block;
+        }
+      }
+
+    }
+  }
 
 `
 
