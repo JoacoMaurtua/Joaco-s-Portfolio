@@ -3,7 +3,7 @@ import {createGlobalStyle} from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 
   :root{
-    --primaryColor: #007bff;
+    --primaryColor:#60e9f8;
     --secondaryColor: #6c757d;
     --backDarkColor: #10121a;
     --borderColor:  #60e9f8;
@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    background-color: black;
+    background-color: #001011;
     color:  white;  /* #a4acc4 */
   }
 
@@ -33,6 +33,13 @@ const GlobalStyle = createGlobalStyle`
     font-family: inherit;
     color: inherit;
     font-size: inherit;
+  }
+
+  h1{
+    font-size: 3rem;
+    span{
+      font-size: 3rem;
+    }
   }
 
 `;

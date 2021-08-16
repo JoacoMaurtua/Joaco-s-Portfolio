@@ -33,6 +33,9 @@ const NavigationStyled = styled.div`
     } */
     li{
       display: block;
+      &:hover{
+        background-color: var(--primaryColor);
+      }
       a{
         display: block;
         padding: .2rem 0;
@@ -41,15 +44,15 @@ const NavigationStyled = styled.div`
         &:hover{
           cursor: pointer;
         }
-        &::before{
+        &:before{
           content:"";
           position: absolute;
           bottom:0;
           left: 0;
           width: 0;
           height: 50%;
-          background-color: #60e9f8;
-          transition: All 0.4s cubic-bezier(1,-0.2,.25,.95);
+          background-color: var(--primaryColor);
+          transition: All 0.6s cubic-bezier(1,-0.2,.25,.95);
           z-index: 3;
           opacity: 0.20;
           transform-origin: right;
