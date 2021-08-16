@@ -18,26 +18,67 @@ const NavigationStyled = styled.div`
     text-align: center;
     padding: 2rem 0;
     img{
-      width: 100%;
+      width: 90%;
       border-radius: 50%;
       border: 8px solid var(--borderColor);
      
     }
+  }
 
-    .nav-items{
-      width: 100%;
-      text-align:center;
-      li{
+  .nav-items{
+    width: 100%;
+    text-align:center;
+    /* .active-class{
+      background-color: var(--borderColor);
+    } */
+    li{
+      display: block;
+      a{
         display: block;
-        a{
-          display: block;
+        padding: .2rem 0;
+        position: relative;
+        z-index: 4;
+        &:hover{
+          cursor: pointer;
+        }
+        &::before{
+          content:"";
+          position: absolute;
+          bottom:0;
+          left: 0;
+          width: 0;
+          height: 50%;
+          background-color: #60e9f8;
+          transition: All 0.4s cubic-bezier(1,-0.2,.25,.95);
+          z-index: 3;
+          opacity: 0.20;
+          transform-origin: right;
+          
+
         }
       }
 
+      a:hover::before{
+        width: 100%;
+        height: 100%;
+
+      }
     }
+
   }
 
-`
+  footer{
+    border-top: 1px solid var(--borderColor);
+    width: 100%;
+    p{
+      padding: 2rem 0;
+      font-size: 1.1rem;
+      display: block;
+      text-align: center;
+    }
+  }
+  
+`;
 
 export default function Navigation() {
   return (
@@ -63,7 +104,7 @@ export default function Navigation() {
           </li>
       </ul>
       <footer>
-        <p>@2021 Welcome to our world!</p>
+        <p>@2021 Hello world!</p>
       </footer>
       
     </NavigationStyled>

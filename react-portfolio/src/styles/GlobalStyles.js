@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     --primaryColor: #007bff;
     --secondaryColor: #6c757d;
     --backDarkColor: #10121a;
-    --borderColor: #2e344e;
+    --borderColor:  #60e9f8;
     --backLightColor: #f1f1f1;
     --fontLight: #a4acc4;
     --fontDark: #313131;
@@ -21,16 +21,18 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
   }
 
   body{
     background-color: black;
-    color:  #a4acc4;
+    color:  white;  /* #a4acc4 */
   }
 
   a{
     font-family: inherit;
     color: inherit;
+    font-size: inherit;
   }
 
 `;
