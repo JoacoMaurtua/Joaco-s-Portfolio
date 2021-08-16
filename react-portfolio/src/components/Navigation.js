@@ -38,9 +38,12 @@ const NavigationStyled = styled.div`
       }
       a{
         display: block;
-        padding: .2rem 0;
+        padding: .45rem 0;
         position: relative;
         z-index: 4;
+        text-transform: uppercase;
+        transition: all .4s ease-in-out;
+        font-weight: 600;
         &:hover{
           cursor: pointer;
         }
@@ -52,12 +55,10 @@ const NavigationStyled = styled.div`
           width: 0;
           height: 50%;
           background-color: var(--primaryColor);
-          transition: All 0.6s cubic-bezier(1,-0.2,.25,.95);
+          transition: all 0.6s cubic-bezier(1,-0.2,.25,.95);
           z-index: 3;
           opacity: 0.20;
           transform-origin: right;
-          
-
         }
       }
 
