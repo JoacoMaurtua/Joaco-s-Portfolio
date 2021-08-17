@@ -7,6 +7,8 @@ const SideBarStyled = styled.div`
   height: 100vh;
   position: fixed;
   background-color: var(--sideDark);
+  font-size: 1.3rem !important;
+
 
 
 `;

@@ -21,12 +21,15 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    
   }
 
   body{
     background-color: #001011;
     color:  white;  /* #a4acc4 */
+    transition: all .4s ease-in-out;
+    
   }
 
   a{

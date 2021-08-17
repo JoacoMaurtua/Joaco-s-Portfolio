@@ -14,7 +14,6 @@ const MainContentStyled = styled.main`
   min-height: 100vh;
 `;
 
-
 function App() {
   return (
     <div className="App">

@@ -11,6 +11,7 @@ const NavigationStyled = styled.div`
   height: 100%;
   width: 100%;
   border-right: 3px solid var(--borderColor);
+  font-size: 1.2rem !important;
 
   .avatar{
     width: 80%;
@@ -95,7 +96,7 @@ export default function Navigation() {
               <NavLink to ="/" activeClassName="active-class">Home</NavLink>
           </li>
           <li className="nav-item">
-              <NavLink to ="/about" activeClassName="active-class">Abaut</NavLink>
+              <NavLink to ="/about" activeClassName="active-class">About</NavLink>
           </li>
           <li className="nav-item">
               <NavLink to ="/resume" activeClassName="active-class">Resume</NavLink>
