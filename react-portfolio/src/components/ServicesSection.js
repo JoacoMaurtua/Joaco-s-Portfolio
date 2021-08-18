@@ -17,9 +17,6 @@
         }
 
       }
-  
-  
-  
   `;
 
   export default function ServicesSection() {
@@ -53,6 +50,8 @@
                     "Hello World! I am Joaquín, the man who will help you fulfill your craziest ideas regarding software."
                   }
                 />
+
+                
             </div>
         </ServicesStyled>    
       </InnerLayout>
