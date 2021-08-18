@@ -8,6 +8,15 @@
   import mobile from '../images/mobile.png';
 
   const ServicesStyled = styled.div`
+      .services{
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+        .mid-card{
+          margin: 0 1.2rem;
+        }
+
+      }
   
   
   
@@ -23,23 +32,25 @@
                   image={web}
                   title={"Web Design"}
                   paragraph={
-                    "Hello World! I am Joaquín, the man who will help you fulfill your craziest ideas regarding software, my mission in this world is to innovate and find intelligent solutions to make life easier for you."
+                    "Hello World! I am Joaquín, the man who will help you fulfill your craziest ideas regarding software."
                   }
                 />
-
-                <ServicesCard
-                  image={pwa}
-                  title={"Web Development"}
-                  paragraph={
-                    "Hello World! I am Joaquín, the man who will help you fulfill your craziest ideas regarding software, my mission in this world is to innovate and find intelligent solutions to make life easier for you."
-                  }
-                />
-
+                
+                <div className="mid-card">
+                    <ServicesCard
+                      image={pwa}
+                      title={"Web Development"}
+                      paragraph={
+                        "Hello World! I am Joaquín, the man who will help you fulfill your craziest ideas regarding software."
+                      }
+                    />
+                </div>
+                
                 <ServicesCard
                   image={mobile}
                   title={"Mobile Development"}
                   paragraph={
-                    "Hello World! I am Joaquín, the man who will help you fulfill your craziest ideas regarding software, my mission in this world is to innovate and find intelligent solutions to make life easier for you."
+                    "Hello World! I am Joaquín, the man who will help you fulfill your craziest ideas regarding software."
                   }
                 />
             </div>
