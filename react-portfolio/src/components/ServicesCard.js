@@ -2,7 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ServiceCardStyled = styled.div`
-  border-top: 8px solid var(--borderColor); 
+  background-color: var(--sideDark);
+  border-top: 6px solid #00919c; 
+  border-radius: 6px;
+  transition: all .4s ease-in-out;
+  &:hover{
+    border-top: 5px solid var(--borderColor); 
+    transform: translateY(3px);
+  }
   img{
     width: 9rem;
   }
@@ -16,7 +23,7 @@ const ServiceCardStyled = styled.div`
       
       &:after{
         content: "";
-        width: 4rem;
+        width: 5rem;
         background-color: var(--borderColor);
         height: 3px;
         position: absolute;

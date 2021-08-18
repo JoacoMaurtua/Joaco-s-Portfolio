@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     --fontLight: #a4acc4;
     --fontDark: #313131;
     --fontDrak2: #151515;
-    --sideDark: #191d2b;
+    --sideDark: #093a3e;
   }
 
   *{

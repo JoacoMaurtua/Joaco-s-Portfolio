@@ -14,7 +14,7 @@ const NavigationStyled = styled.div`
   font-size: 1.2rem !important;
 
   .avatar{
-    width: 80%;
+    width: 85%;
     border-bottom: 1px solid var(--borderColor);
     text-align: center;
     padding: 2rem 0;
