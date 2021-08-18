@@ -3,11 +3,21 @@ import { MainLayout,InnerLayout } from '../styles/Layouts';
 import styled from 'styled-components';
 import Title from '../components/Title';
 import PrimaButton from '../components/PrimaButton';
+import PhoneIcon from '@material-ui/icons/Phone';
+import MailIcon from '@material-ui/icons/Mail';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import ContactItem from '../components/ContactItem';
 
 const ContactPageStyled = styled.section`
   .contact-section{
       display: grid;
       grid-template-columns: repeat(2,1fr);
+      grid-column-gap: 2rem;
+      .right-content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
       .contact-title{
         h4{
           color: var(--colorWhite);
@@ -60,6 +70,11 @@ const ContactPageStyled = styled.section`
 `;
 
 export default function ContactPage() {
+  /* MATERIAL UI ICONS: */
+  const phone = <PhoneIcon/>
+  const mail = <MailIcon/>
+  const location = <LocationOnIcon/>
+
   return (
     <MainLayout>
       <Title title={'Contact'} span={'Contact'}/>
@@ -75,7 +90,6 @@ export default function ContactPage() {
                   <input
                     type="text"
                     id="name"
-                  
                   />
                 </div>
 
@@ -83,8 +97,7 @@ export default function ContactPage() {
                   <label htmlFor="email" id="email">Enter your email </label>
                   <input
                     type="email"
-                    id="email"
-                  
+                    id="email" 
                   />
                 </div>
 
@@ -106,7 +119,26 @@ export default function ContactPage() {
               </form>
             </div>
             <div className="right-content">
+                <ContactItem 
+                  icon={phone}
+                  title={'Phone'}
+                  contact1={'+51 993 406 228'}
+                  contact2={'054 25-9605'}
+                />
 
+                 <ContactItem 
+                  icon={mail}
+                  title={'Email'}
+                  contact1={'joacomaurtua@gmail.com'}
+                  contact2={'falconDev@gmail.com'}
+                />
+
+                 <ContactItem 
+                  icon={location}
+                  title={'Location'}
+                  contact1={'Urb Valencia E-14, Umacollo'}
+                  contact2={'Arequipa, Peru'}
+                />
             </div>
         </InnerLayout>
       </ContactPageStyled>
