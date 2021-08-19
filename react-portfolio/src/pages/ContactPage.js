@@ -7,15 +7,16 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ContactItem from '../components/ContactItem';
+import Particle from '../components/Particle';
 
 const ContactPageStyled = styled.section`
+
   .contact-section{
       display: grid;
       grid-template-columns: repeat(2,1fr);
       grid-column-gap: 2rem;
       .right-content{
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
       }
       .contact-title{
@@ -78,7 +79,9 @@ export default function ContactPage() {
   return (
     <MainLayout>
       <Title title={'Contact'} span={'Contact'}/>
+      
       <ContactPageStyled>
+      
         <InnerLayout className={"contact-section"}>
             <div className="left-content">
               <div className="contact-title">
@@ -119,21 +122,21 @@ export default function ContactPage() {
               </form>
             </div>
             <div className="right-content">
-                <ContactItem 
+                <ContactItem className="contact-item"
                   icon={phone}
                   title={'Phone'}
                   contact1={'+51 993 406 228'}
                   contact2={'054 25-9605'}
                 />
 
-                 <ContactItem 
+                 <ContactItem className="contact-item"
                   icon={mail}
                   title={'Email'}
                   contact1={'joacomaurtua@gmail.com'}
                   contact2={'falconDev@gmail.com'}
                 />
 
-                 <ContactItem 
+                 <ContactItem className="contact-item"
                   icon={location}
                   title={'Location'}
                   contact1={'Urb Valencia E-14, Umacollo'}
