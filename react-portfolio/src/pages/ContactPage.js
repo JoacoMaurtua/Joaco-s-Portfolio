@@ -1,4 +1,4 @@
-import React, {useState,useEffect,useRef} from 'react';
+import React, {useState,useRef} from 'react';
 import { MainLayout,InnerLayout } from '../styles/Layouts';
 import styled from 'styled-components';
 import Title from '../components/Title';
@@ -76,15 +76,21 @@ export default function ContactPage() {
   const mail = <MailIcon/>
   const location = <LocationOnIcon/>
 
+  const inputName = useRef(null);
+  const inputEmail = useRef(null);
+  const inputPhone = useRef(null);
+
   const [data,setData] = useState({
     name:'',
     email:'',
     phoneNumber:'',
     message:''
-  })
+  });
+
   const {name,email,phoneNumber,message} = data;
 
   const [isSubmit,setIsSubmit] = useState(false);
+  console.log(isSubmit);
 
   const [errors,setErrors] = useState({});
 
@@ -100,10 +106,14 @@ export default function ContactPage() {
 
   const handleSubmit = (event) =>{
     event.preventDefault();
-    console.log(data);
-    setErrors(submitValidation(data))
-    setIsSubmit(true)
+    const datos = {...data}
+    console.log('Hello',datos);
+    setErrors(submitValidation(data));
+    setIsSubmit(true);
 
+    inputName.current.value = '';
+    inputEmail.current.value = '';
+    inputPhone.current.value = '';
 
   };
 
@@ -113,7 +123,6 @@ export default function ContactPage() {
       ...data,
       [name]:value
     })
-
 
   }
 
@@ -136,6 +145,7 @@ export default function ContactPage() {
                     id="name"
                     name="name"
                     value={name}
+                    ref={inputName}
                     onChange={handleOnChange}
                   />
                    {
@@ -152,6 +162,7 @@ export default function ContactPage() {
                     id="email" 
                     name="email"
                     value={email}
+                    ref={inputEmail}
                     onChange={handleOnChange}
                   />
                   {
@@ -174,6 +185,7 @@ export default function ContactPage() {
                     id="phone"
                     name="phoneNumber"
                     value={phoneNumber}
+                    ref={inputPhone}
                     onChange={handleOnChange}
                   />
                    {
