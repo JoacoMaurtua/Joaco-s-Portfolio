@@ -82,10 +82,27 @@ export default function ContactPage() {
     phoneNumber:'',
     message:''
   })
+  const {name,email,phoneNumber,message} = data;
+
+  const [isSubmit,setIsSubmit] = useState(false);
+
+  const [errors,setErrors] = useState({});
+
+  const submitValidation = (data) =>{
+    let errors = {};
+    if(!name.trim()) {errors.name = 'Please type your name'};
+    if(!phoneNumber.trim()) {errors.phoneNumber = 'Please type a reference phone number'};
+    if(!email) {errors.email = 'Please type a reference email'};
+
+    return errors;
+
+  }
 
   const handleSubmit = (event) =>{
     event.preventDefault();
     console.log(data);
+    setErrors(submitValidation(data))
+    setIsSubmit(true)
 
 
   };
@@ -99,8 +116,6 @@ export default function ContactPage() {
 
 
   }
-
-  const {name,email,phoneNumber,message} = data
 
   return (
     <MainLayout>
@@ -122,8 +137,12 @@ export default function ContactPage() {
                     name="name"
                     value={name}
                     onChange={handleOnChange}
-                    
                   />
+                   {
+                    //submit validation
+                    (errors.name)?
+                    <p>{errors.name}</p>:''
+                  }
                 </div>
 
                 <div className="form-field">
@@ -135,6 +154,17 @@ export default function ContactPage() {
                     value={email}
                     onChange={handleOnChange}
                   />
+                  {
+                    //input validation
+                    (email.length > 0 && !/\S+@\S+\.\S+/.test(email))?
+                    <p>Email address is invalid! Please try again</p>:
+                    ''
+                  }
+                  {
+                    //submit validation
+                    (errors.email)?
+                    <p>{errors.email}</p>:''
+                  }
                 </div>
 
                 <div className="form-field">
@@ -146,6 +176,11 @@ export default function ContactPage() {
                     value={phoneNumber}
                     onChange={handleOnChange}
                   />
+                   {
+                    //submit validation
+                    (errors.phoneNumber)?
+                    <p>{errors.phoneNumber}</p>:''
+                  }
                 </div>
 
                 <div className="form-field">
