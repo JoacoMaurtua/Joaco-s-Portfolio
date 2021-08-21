@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const PrimaryButtonStyled = styled.a`
+const PrimaryButtonStyled = styled.button`
   background-color: #00919c;
   padding: .8rem 2.5rem;
   color: white;

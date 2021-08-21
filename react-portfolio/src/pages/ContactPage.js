@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState,useEffect,useRef} from 'react';
 import { MainLayout,InnerLayout } from '../styles/Layouts';
 import styled from 'styled-components';
 import Title from '../components/Title';
@@ -7,7 +7,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ContactItem from '../components/ContactItem';
-import Particle from '../components/Particle';
+
 
 const ContactPageStyled = styled.section`
 
@@ -76,6 +76,32 @@ export default function ContactPage() {
   const mail = <MailIcon/>
   const location = <LocationOnIcon/>
 
+  const [data,setData] = useState({
+    name:'',
+    email:'',
+    phoneNumber:'',
+    message:''
+  })
+
+  const handleSubmit = (event) =>{
+    event.preventDefault();
+    console.log(data);
+
+
+  };
+
+  const handleOnChange = (event) =>{
+    const {name,value} = event.target;
+    setData({
+      ...data,
+      [name]:value
+    })
+
+
+  }
+
+  const {name,email,phoneNumber,message} = data
+
   return (
     <MainLayout>
       <Title title={'Contact'} span={'Contact'}/>
@@ -87,12 +113,16 @@ export default function ContactPage() {
               <div className="contact-title">
                   <h4>Get In Touch!</h4>
               </div>
-              <form className="form">
+              <form className="form" onSubmit={handleSubmit}>
                 <div className="form-field">
                   <label htmlFor="name" id="name">Enter your name</label>
                   <input
                     type="text"
                     id="name"
+                    name="name"
+                    value={name}
+                    onChange={handleOnChange}
+                    
                   />
                 </div>
 
@@ -101,6 +131,9 @@ export default function ContactPage() {
                   <input
                     type="email"
                     id="email" 
+                    name="email"
+                    value={email}
+                    onChange={handleOnChange}
                   />
                 </div>
 
@@ -109,15 +142,25 @@ export default function ContactPage() {
                   <input
                     type="text"
                     id="phone"
+                    name="phoneNumber"
+                    value={phoneNumber}
+                    onChange={handleOnChange}
                   />
                 </div>
 
                 <div className="form-field">
                   <label htmlFor="textarea">How can I help you? </label>
-                  <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                  <textarea 
+                    id="textarea" 
+                    cols="30" rows="10"
+                    name="message"
+                    value={message}
+                    onChange={handleOnChange}
+                    
+                  ></textarea>
                 </div>
                 <div className="form-field">
-                    <PrimaButton title={"SEND DATA"}/>
+                    <PrimaButton title={"SEND DATA"} type="submit"/>
                 </div>
               </form>
             </div>
