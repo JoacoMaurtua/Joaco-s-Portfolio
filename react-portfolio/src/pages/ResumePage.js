@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Skills from '../components/Skills';
 
 export default function ResumePage() {
   return (
     <div>
-      Resume Page
+      <Skills/>
     </div>
   )
 }

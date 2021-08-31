@@ -11,6 +11,8 @@ const PrimaryButtonStyled = styled.button`
   text-transform: uppercase;
   position: relative;
   transition: all .4s ease-in-out;
+  outline: none;
+  border: none;
   &:after{
     position:absolute;
     content: "";

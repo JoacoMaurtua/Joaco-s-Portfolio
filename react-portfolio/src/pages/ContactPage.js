@@ -7,14 +7,24 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ContactItem from '../components/ContactItem';
+import Particle from '../components/Particle';
 
 
 const ContactPageStyled = styled.section`
 
   .contact-section{
+      position: relative;
+      padding-top: -10px;
       display: grid;
       grid-template-columns: repeat(2,1fr);
       grid-column-gap: 2rem;
+      .p-particles-js{
+        position: absolute;
+        top: 0;
+        left:0;
+        margin-top: -38rem;
+        margin-left: 17rem;
+       }
       .right-content{
         display: flex;
         flex-direction: column;
@@ -22,7 +32,7 @@ const ContactPageStyled = styled.section`
       .contact-title{
         h4{
           color: var(--colorWhite);
-          padding: 1rem 0;
+          padding: .8rem 0;
           font-size: 2.2rem;
         }
       }
@@ -128,11 +138,18 @@ export default function ContactPage() {
 
   return (
     <MainLayout>
+      
+     
       <Title title={'Contact'} span={'Contact'}/>
+       
       
       <ContactPageStyled>
-      
+     
+       
         <InnerLayout className={"contact-section"}>
+          <div className="p-particles-js">
+            <Particle />
+          </div>
             <div className="left-content">
               <div className="contact-title">
                   <h4>Get In Touch!</h4>
@@ -199,7 +216,7 @@ export default function ContactPage() {
                   <label htmlFor="textarea">How can I help you? </label>
                   <textarea 
                     id="textarea" 
-                    cols="30" rows="10"
+                    cols="30" rows="7.5"
                     name="message"
                     value={message}
                     onChange={handleOnChange}

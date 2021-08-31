@@ -11,7 +11,6 @@ const NavigationStyled = styled.div`
   height: 100%;
   width: 100%;
   border-right: 3px solid var(--borderColor);
-  font-size: 1.2rem !important;
 
   .avatar{
     width: 85%;
@@ -22,6 +21,11 @@ const NavigationStyled = styled.div`
       width: 90%;
       border-radius: 50%;
       border: 8px solid var(--borderColor);
+      &:hover{
+        transform: translateY(-5px);
+        cursor: pointer;
+        
+    }
      
     }
   }
@@ -29,6 +33,7 @@ const NavigationStyled = styled.div`
   .nav-items{
     width: 100%;
     text-align:center;
+    font-size: 1.5rem !important;
     /* .active-class{
       background-color: var(--borderColor);
     } */

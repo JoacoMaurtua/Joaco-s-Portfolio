@@ -9,7 +9,7 @@ const HomePageStyled = styled.header`
     width: 100%;
     height: 100vh;
     position: relative; 
-    .p-particles-ja{
+    .p-particles-js{
       position: absolute;
       top: 0;
       left:0;
@@ -47,7 +47,6 @@ const HomePageStyled = styled.header`
           }
         }
     }
-
 
 `;
 
