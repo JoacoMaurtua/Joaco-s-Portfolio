@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MainLayout, InnerLayout } from '../styles/Layouts';
+import { InnerLayout } from '../styles/Layouts';
 import ProgressBar from './ProgressBar';
 import Title from './Title';
 const SkillsStyled = styled.section`
@@ -17,8 +17,8 @@ const SkillsStyled = styled.section`
 export default function Skills() {
   return (
     <SkillsStyled>
-      <MainLayout>
-        <Title title={'Resume'} span={'Resume'}/>
+      
+        <Title title={'Principal Skills'} span={'Principal Skills'}/>
         <InnerLayout>
           <div className="skills">
             <ProgressBar
@@ -28,37 +28,51 @@ export default function Skills() {
             />
 
             <ProgressBar
-              title={'CSS3'}
-              width={'90%'}
-              text={'90%'}
-            />
-
-            <ProgressBar
-              title={'JAVASCRIPT'}
-              width={'75%'}
-              text={'75%'}
-            />
-
-            <ProgressBar
-              title={'REACT JS'}
-              width={'75%'}
-              text={'75%'}
-            />
-
-            <ProgressBar
               title={'MONGODB'}
               width={'40%'}
               text={'40%'}
             />
 
             <ProgressBar
-              title={'NODE'}
+              title={'CSS3'}
+              width={'90%'}
+              text={'90%'}
+            />
+
+            <ProgressBar
+              title={'MONGOOSE'}
+              width={'55%'}
+              text={'55%'}
+            />
+
+            <ProgressBar
+              title={'JAVASCRIPT'}
+              width={'85%'}
+              text={'85%'}
+            />
+
+            <ProgressBar
+              title={'EXPRESS'}
+              width={'50%'}
+              text={'50%'}
+            />
+
+             <ProgressBar
+              title={'REACT JS'}
+              width={'75%'}
+              text={'75%'}
+            />
+
+             <ProgressBar
+              title={'NODE JS'}
               width={'70%'}
               text={'70%'}
             />
+
+
           </div>
         </InnerLayout>
-      </MainLayout>
+
     </SkillsStyled>
   )
 }

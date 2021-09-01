@@ -22,8 +22,7 @@ const ProgressBarStyled = styled.div`
       }
     }
   }
-
-
+  
 `;
 
 export default function ProgressBar({title,width,text}) {

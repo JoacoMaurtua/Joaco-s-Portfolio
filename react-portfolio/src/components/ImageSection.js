@@ -78,7 +78,7 @@ export default function ImageSection() {
                   <p>: Spanish, English, Italian</p>
                   <p>: Acting, drawing, painting, gym and design</p>
                   <p>: Arequipa, Perú</p>
-                  <p>: Web and mobile developer</p>
+                  <p>: Full stack MERN developer</p>
               </div>
           </div>
           <PrimaButton title={"Download CV"}/>
