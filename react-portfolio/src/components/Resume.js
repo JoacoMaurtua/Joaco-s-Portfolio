@@ -12,6 +12,10 @@ const ResumeStyled = styled.section`
       padding-bottom: 2rem;
     }
 
+    .resume-container{
+      border-left: 1px solid var(--borderColor);
+    }
+
 `;
 
 export default function Resume() {
@@ -26,6 +30,14 @@ export default function Resume() {
               <SmallTitle icon={codeIcon} title={'Other Technologies'} />
           </div>
           <div className="resume-container">
+            <ResumeItem 
+              title={'Frameworks and tools'}
+              text={'JQuery, BackBone.js, Bootstrap, Reactstrap, Material UI, Styled componets, React Motion'}
+            />
+            <ResumeItem 
+              title={'Frameworks and tools'}
+              text={'JQuery, BackBone.js, Bootstrap, Reactstrap, Material UI, Styled componets, React Motion'}
+            />
             <ResumeItem 
               title={'Frameworks and tools'}
               text={'JQuery, BackBone.js, Bootstrap, Reactstrap, Material UI, Styled componets, React Motion'}

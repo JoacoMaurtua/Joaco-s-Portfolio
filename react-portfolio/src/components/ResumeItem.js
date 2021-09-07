@@ -3,14 +3,20 @@ import styled from 'styled-components';
 
 const ResumeItemStyled = styled.div`
   display: flex;
+  &:not(:last-child){
+    padding-bottom: 3rem;
+  }
   .left-content{ //Cunado cambie a mi experiencia laboral
-    width: 50%;
+
+    width: 10%;
+  
     p{
       display: inline-block;
     }
   }
   .right-content{
-    padding-left: .5rem;
+    margin-left: .5rem;
+    padding-left: 5.5rem;
     position: relative;
     &::before{
         content: "";
@@ -19,7 +25,7 @@ const ResumeItemStyled = styled.div`
         top: 15px;
         height: 2px;
         width: 3rem;
-        background-color: red;
+        background-color: var(--borderColor);
 
     }
     h5{
