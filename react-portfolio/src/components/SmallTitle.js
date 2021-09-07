@@ -2,16 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SmallTitleStyled =  styled.div`
-    display: flex;
+      display: flex;
     align-items: center;
     p{
-      padding-right: 1rem;
+        padding-right: 1rem;
+        svg{
+            font-size: 3rem;
+        }
     }
     h3{
-      color: var(--whiteColor);
-      svg{
-        font-size: 2rem;
-      }
+        color: var(--white-color);
+        font-size: 2.5rem;
     }
 `;
 

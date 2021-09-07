@@ -10,8 +10,6 @@ const SkillsStyled = styled.section`
     grid-row-gap: 2rem;
     grid-column-gap: 3rem;
   }
-
-
 `;
 
 export default function Skills() {
@@ -68,8 +66,7 @@ export default function Skills() {
               width={'70%'}
               text={'70%'}
             />
-
-
+            
           </div>
         </InnerLayout>
 
