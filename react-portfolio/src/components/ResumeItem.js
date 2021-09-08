@@ -3,20 +3,32 @@ import styled from 'styled-components';
 
 const ResumeItemStyled = styled.div`
   display: flex;
-  &:not(:last-child){
-    padding-bottom: 3rem;
-  }
-  .left-content{ //Cunado cambie a mi experiencia laboral
-
-    width: 10%;
   
+  margin-bottom: 3rem;
+  
+  .left-content{ //Cuando cambie a mi experiencia laboral
+    width: 6%;
+    position: relative;
+    margin-left: 2rem;
+    &::before{
+      content: "";
+      position: absolute;
+      left: -45px;
+      top: 5px;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      border: 2px solid var(--borderColor);
+      background-color: var(--backGroundDark);
+    }
+    
     p{
       display: inline-block;
     }
   }
   .right-content{
     margin-left: .5rem;
-    padding-left: 5.5rem;
+    padding-left: 6.5rem;
     position: relative;
     &::before{
         content: "";
@@ -24,7 +36,7 @@ const ResumeItemStyled = styled.div`
         left: 0;
         top: 15px;
         height: 2px;
-        width: 3rem;
+        width: 2rem;
         background-color: var(--borderColor);
 
     }
@@ -37,11 +49,11 @@ const ResumeItemStyled = styled.div`
   }
 `;
 
-export default function ResumeItem({title,text}) {
+export default function ResumeItem({year,title,text}) {
   return (
     <ResumeItemStyled>
       <div className="left-content">
-         
+         <p>{year}</p>
       </div>
       <div className="right-content">
         <h5>{title}</h5>
