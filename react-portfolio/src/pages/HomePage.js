@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Particle from '../components/Particle';
-import FacebookIcon from "@material-ui/icons/Facebook";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GithubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
 
@@ -62,8 +62,8 @@ export default function HomePage() {
              Hello World! I am Joaquín, the man who will help you fulfill your craziest ideas regarding software, my mission in this world is to innovate and find intelligent solutions to make life easier for you.
           </p>
           <div className="icons">
-              <a href="https://www.facebook.com/joaquin.maurtuadiban" className="icon i-facebook">
-                <FacebookIcon />
+              <a href="https://www.linkedin.com/in/joaqu%C3%ADn-ma%C3%BArtua-a4403a209/" className="icon i-linkdin">
+                <LinkedInIcon />
               </a>
               <a href="https://github.com/JoacoMaurtua" className="icon i-github">
                 <GithubIcon />
