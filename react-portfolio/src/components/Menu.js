@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled';
+import styled from 'styled-components';
 import GitHub from '@material-ui/icons/GitHub'
 
 const MenuItemStyled = styled.div`
@@ -25,6 +25,8 @@ export default function Menu({menuItem}) {
                       </li>
                     </ul>
                 </div>
+                <h6>{item.title}</h6>
+                <p>{item.text}</p>
             </div>
           })
         }
