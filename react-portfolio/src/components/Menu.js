@@ -3,6 +3,23 @@ import styled from 'styled-components';
 import GitHub from '@material-ui/icons/GitHub'
 
 const MenuItemStyled = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 2rem;
+  .grid-item{
+      .portfolio-content{
+        display: block;
+        position: relative;
+        img{
+          width: 100%;
+          height: 27vh;
+        }
+        ul{
+          display: none;
+        }
+      }
+  }
+  
 
 
 `;
