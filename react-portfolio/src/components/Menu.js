@@ -7,12 +7,19 @@ const MenuItemStyled = styled.div`
   grid-template-columns: repeat(3,1fr);
   grid-gap: 2rem;
   .grid-item{
+      h3{
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
+        color: var(--primaryColor);
+      }
       .portfolio-content{
         display: block;
         position: relative;
+
         img{
           width: 100%;
           height: 27vh;
+          object-fit: cover;
         }
         ul{
           display: none;
@@ -20,8 +27,6 @@ const MenuItemStyled = styled.div`
       }
   }
   
-
-
 `;
 
 export default function Menu({menuItem}) {
@@ -42,7 +47,7 @@ export default function Menu({menuItem}) {
                       </li>
                     </ul>
                 </div>
-                <h6>{item.title}</h6>
+                <h3 className="title" >{item.title}</h3>
                 <p>{item.text}</p>
             </div>
           })

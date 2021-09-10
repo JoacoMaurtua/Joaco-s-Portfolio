@@ -24,7 +24,10 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-size: 1.1rem;
-    
+  }
+
+  h3{
+    font-size: 1.5rem;
   }
 
   body{
