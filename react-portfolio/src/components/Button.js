@@ -6,7 +6,7 @@ export default function Button({filter,button}) {
     <div>
       {
         button.map((button,index)=>{
-          return <button key = {index}>
+          return <button key = {index} onClick={()=>filter(button)}>
             {button}
           </button>
         })
