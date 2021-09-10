@@ -6,7 +6,9 @@ export default function Button({filter,button}) {
     <div>
       {
         button.map((button,index)=>{
-          
+          return <button key = {index}>
+            {button}
+          </button>
         })
       }
     </div>

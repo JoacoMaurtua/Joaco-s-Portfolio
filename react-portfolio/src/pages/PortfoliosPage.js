@@ -3,32 +3,32 @@ import Title from '../components/Title';
 import { MainLayout, InnerLayout } from '../styles/Layouts';
 import Menu from '../components/Menu';
 import projects from '../data/projects';
-import { Button } from '@material-ui/core';
+import Button from '../components/Button';
 
-const allButtons = ['All', ...projects.map(item=>item.category)]
+const allButtons = ['All', ...new Set(projects.map(item => item.category))]
 
 export default function PortfoliosPage() {
-  const [menuItem, setMenuItem] = useState(projects);
-  const [button, setButtons] = useState(allButtons);
+  const [menuItem, setMenuItems] = useState(projects);
+    const [button, setButtons] = useState(allButtons);
 
-  const filter = (button) =>{
+    const filter = (button) => {
 
-    if(button === 'MERN APP'){
-      setMenuItem(projects);
-      return;
+        if(button === 'All'){
+            setMenuItems(projects);
+            return;
+        }
+
+        const filteredData = projects.filter(item => item.category === button);
+        setMenuItems(filteredData);
     }
-
-    const filteredData = projects.filter(item => item.category === button);
-    setMenuItem(filteredData);
-  };
 
   return (
     <MainLayout>
-      <Title title={'Projects'} span={'Projects'}/>
-      <InnerLayout>
-          <Button filter={filter} button={button}/>
-          <Menu menuItem = {menuItem}/> 
-      </InnerLayout>
+        <Title title={'Portfolios'} span={'portfolios'} />
+        <InnerLayout>
+            <Button filter={filter} button={button} />
+            <Menu menuItem={menuItem} />
+        </InnerLayout>
     </MainLayout>
   )
 }
