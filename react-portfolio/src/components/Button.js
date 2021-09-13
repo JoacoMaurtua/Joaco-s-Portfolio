@@ -13,7 +13,8 @@ const ButtonStyled = styled.button`
   border-radius: 8px;
   &:active, &:focus{
     background-color: var(--primaryColor);
-    color: var(--sideDark)
+    color: var(--sideDark);
+    font-weight: bold;
   };
   &:not(:last-child){
     margin-right: 1rem;
@@ -21,6 +22,7 @@ const ButtonStyled = styled.button`
   &:hover{
     background-color: var(--primaryColor);
     color: var(--sideDark);
+    font-weight: bold;
   }
 `;
 
