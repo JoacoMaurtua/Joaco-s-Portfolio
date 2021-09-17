@@ -66,6 +66,25 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  .light-dark-mode{
+    position: fixed;
+    right: 0;
+    top: 10%;
+    background-color: var(--secondaryColor);
+    width: 6.5rem;
+    height: 2.5rem;
+    z-index:15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+      display: flex;
+      align-items: center;
+      font-size:1.7rem;
+      color: var(--whiteColor);
+    }
+  }
+
 `;
 
 export default GlobalStyle;
