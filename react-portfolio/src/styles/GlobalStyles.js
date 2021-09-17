@@ -37,6 +37,21 @@ const GlobalStyle = createGlobalStyle`
     
   }
 
+  body::-webkit-scrollbar{
+    width: 9px;
+    background-color: #001011;
+  }
+
+  body::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #093a3e;
+  }
+
+  body::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #6c757d;
+  }
+
   a{
     font-family: inherit;
     color: inherit;
