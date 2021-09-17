@@ -29,7 +29,11 @@ const MenuItemStyled = styled.div`
         }
         ul{
           display: none;
-          transform: translateY()-100px
+          transform: translateY(-100px);
+          transition: all .4s ease-in-out;
+          position: absolute;
+          left: 50%;
+          top: 30%;
         }
 
         .portfolio-image{
@@ -49,36 +53,45 @@ const MenuItemStyled = styled.div`
         .portfolio-image:hover{
           ul{
             transform: translateY(0);
-            display: block;
-            position: absolute;
-            left: 50%;
-            top: 35%;
             transform: translate(-50%, -50%);
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: all .4s ease-in-out;
             li{
               display: flex;
               align-items: center;
               justify-content: center;
-              padding: 2rem;
+              padding: 1rem;
               border-radius: 50%;
-              margin: 0 1rem;
-      
+              margin: 0 .5rem;
+              a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+          
             }
             svg{
-              font-size: 3.5rem;
+              font-size: 3rem;
               color: #00919c;
               cursor: pointer;
+              transform: scale(0.80);
+              &:hover{
+                transform: scale(0.90);
+                font-size: 3.5rem;
+                color: var(--primaryColor);
+                transition: all .3s ease-in-out;
+              }
             }
           }
           &::before{
             transform-origin: left;
             width: calc(100% - 4%);
-            height: calc(100% - 43%);
-            background-color: white;
+            height: calc(100% - 47%);
+            background-color: var(--backGroundDark);
             opacity: 0.9;
-            transform-origin: left;
+            
           
           }
 
@@ -98,13 +111,13 @@ export default function Menu({menuItem}) {
                         <img src={item.image} alt=""/>
                         <ul>
                             <li>
-                                <a href={item.link1}>
+                                <a href={item.link}>
                                     <GitHub />
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <h6>{item.title}</h6>
+                    <h3>{item.title}</h3>
                     <p>{item.text}</p>
                 </div>
             </div>
@@ -113,3 +126,4 @@ export default function Menu({menuItem}) {
 </MenuItemStyled>
   )
 }
+
