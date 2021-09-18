@@ -17,9 +17,10 @@ const ImageSectionStyled = styled.div`
     }
     .right-content{
         width: 100%;
+        color: var(--colorWhite);
         h4{
             font-size: 2rem;
-            color: white;
+            color: var(--colorWhite);
             span{
                 font-size: 2rem;
                 color: var(--primaryColor)

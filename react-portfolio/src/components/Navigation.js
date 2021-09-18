@@ -43,6 +43,7 @@ const NavigationStyled = styled.div`
         background-color: var(--primaryColor);
       }
       a{
+        color: var(--colorWhite);
         display: block;
         padding: .45rem 0;
         position: relative;
@@ -52,6 +53,7 @@ const NavigationStyled = styled.div`
         font-weight: 600;
         &:hover{
           cursor: pointer;
+          color: var(--hoverFont);
         }
         &:before{
           content:"";
@@ -85,6 +87,7 @@ const NavigationStyled = styled.div`
       font-size: 1.1rem;
       display: block;
       text-align: center;
+      color: var(--colorWhite);
     }
   }
   

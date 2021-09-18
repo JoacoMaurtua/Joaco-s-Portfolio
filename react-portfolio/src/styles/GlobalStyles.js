@@ -2,7 +2,41 @@ import {createGlobalStyle} from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 
-  :root{
+   /* :root{
+    --backGroundDark: #001011;
+    --backGroundItems: #093a3e;
+    --primaryColor:#60e9f8;
+    --secondaryColor: #6c757d;
+    --backDarkColor: #10121a;
+    --borderColor:  #60e9f8;
+    --backLightColor: #f1f1f1;
+    --fontLight: #a4acc4;
+    --fontDark: #313131;
+    --fontDrak2: #151515;
+    --sideDark: #093a3e;
+    --colorWhite: #ffffff;
+    --hoverFont: #fff
+    
+  
+  } 
+ */
+   *{
+    --backGroundDark: #f1f1f1;
+    --backGroundItems: #093a3e;
+    --primaryColor:#00919c;
+    --secondaryColor: #292929;
+    --backDarkColor: #F1F1F1;
+    --borderColor:  #00919c;
+    --backLightColor: #f1f1f1;
+    --fontLight: #a4acc4;
+    --fontDark: #313131;
+    --fontDrak2: #151515;
+    --sideDark: #E4E4E4;
+    --colorWhite: #151515;
+    --hoverFont: #fff
+  } 
+
+  /* .dark-theme{
     --backGroundDark: #001011;
     --primaryColor:#60e9f8;
     --secondaryColor: #6c757d;
@@ -14,7 +48,8 @@ const GlobalStyle = createGlobalStyle`
     --fontDrak2: #151515;
     --sideDark: #093a3e;
     --colorWhite: #ffffff;
-  }
+
+  } */
 
   *{
     padding: 0;
@@ -70,7 +105,7 @@ const GlobalStyle = createGlobalStyle`
     position: fixed;
     right: 0;
     top: 10%;
-    background-color: var(--secondaryColor);
+    background-color: #3aafb9;
     width: 6.5rem;
     height: 2.5rem;
     z-index:15;

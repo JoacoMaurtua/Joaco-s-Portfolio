@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ServiceCardStyled = styled.div`
-  background-color: var(--sideDark);
+  background-color: var(--backGroundItems);
   border-top: 6px solid #00919c; 
   border-radius: 6px;
   transition: all .4s ease-in-out;

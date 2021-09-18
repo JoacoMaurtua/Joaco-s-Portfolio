@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const TitleStyled = styled.div`
   position: relative;
   h2{
-    color: white;
+    color: var(--colorWhite);
     font-size: 2.8rem;
     font-weight: 600;
     text-transform: uppercase;

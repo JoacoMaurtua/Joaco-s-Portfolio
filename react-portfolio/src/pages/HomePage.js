@@ -22,6 +22,9 @@ const HomePageStyled = styled.header`
       transform: translate(-50%, -50%);
       text-align: center;
       width: 70%;
+      h1, p{
+        color: var(--colorWhite);
+      }
     }
 
     .icons{
@@ -36,11 +39,13 @@ const HomePageStyled = styled.header`
           border-radius: 50%;
           transition: all .4s ease-in-out;
           cursor: pointer;
+          color: var(--colorWhite);
           &:not(:last-child){
             margin-right: 1rem;
           }
           &:hover{
             background-color: var(--primaryColor);
+            color: white;
           }
           svg{
             margin: .5rem;
@@ -57,7 +62,7 @@ export default function HomePage() {
         <Particle />
       </div>
       <div className="typography">
-          <h1 >Hi I'm <span style={{color:"#60e9f8"}}>Joaquín Maúrtua</span></h1>
+          <h1 >Hi I'm <span style={{color:"var(--primaryColor)"}}>Joaquín Maúrtua</span></h1>
           <p>
              Hello World! I am Joaquín, the man who will help you fulfill your craziest ideas regarding software, my mission in this world is to innovate and find intelligent solutions to make life easier for you.
           </p>
