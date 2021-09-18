@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
     --sideDark: #093a3e;
     --colorWhite: #ffffff;
     --hoverFont: #fff
+    --colorBars: #093a3e
     
   
   } 
@@ -33,7 +34,8 @@ const GlobalStyle = createGlobalStyle`
     --fontDrak2: #151515;
     --sideDark: #E4E4E4;
     --colorWhite: #151515;
-    --hoverFont: #fff
+    --hoverFont: #fff;
+    --colorBars: #e4e4e4
   } 
 
   /* .dark-theme{

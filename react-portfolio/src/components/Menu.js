@@ -6,6 +6,7 @@ const MenuItemStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 2rem;
+  color: var(--colorWhite);
   .grid-item{
       transform: scale(0.87);
       transition: all .3s ease-in-out;

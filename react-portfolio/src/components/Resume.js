@@ -8,6 +8,7 @@ import SchoolIcon from '@material-ui/icons/School';
 import ResumeItem from './ResumeItem';
 
 const ResumeStyled = styled.section`
+    color: var(--colorWhite);
     .small-title{
       padding-bottom: 2rem;
     }

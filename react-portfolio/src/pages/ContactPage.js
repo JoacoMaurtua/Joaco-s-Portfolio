@@ -11,7 +11,7 @@ import Particle from '../components/Particle';
 
 
 const ContactPageStyled = styled.section`
-
+  color: var(--colorWhite);
   .contact-section{
       position: relative;
       padding-top: -10px;
@@ -51,9 +51,8 @@ const ContactPageStyled = styled.section`
             padding: .1rem .5rem; 
             font-weight: bold;
             border-radius: 5px;
-            color:white;
-          
-            
+            color: var(--colorWhite);
+        
           }
           input{
             border: 2px solid var(--borderColor);

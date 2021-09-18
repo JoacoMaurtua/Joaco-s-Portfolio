@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ResumeItemStyled = styled.div`
   display: flex;
-  
+  color: var(--colorWhite);
   margin-bottom: 3rem;
   
   .left-content{ //Cuando cambie a mi experiencia laboral

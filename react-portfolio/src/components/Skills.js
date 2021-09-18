@@ -9,6 +9,7 @@ const SkillsStyled = styled.section`
     grid-template-columns: repeat(2,1fr);
     grid-row-gap: 2rem;
     grid-column-gap: 3rem;
+    color: var(--colorWhite)
   }
 `;
 
