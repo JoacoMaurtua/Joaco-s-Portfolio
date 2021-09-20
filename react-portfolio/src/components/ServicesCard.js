@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ServiceCardStyled = styled.div`
-  background-color: var(--backGroundItems);
+  background-color: var(--projectCard);
+  box-shadow: 5px 12px 10px var(--boxesShadow);
   border-top: 6px solid #00919c; 
   border-radius: 6px;
   transition: all .4s ease-in-out;
@@ -34,6 +35,7 @@ const ServiceCardStyled = styled.div`
     }
     p{
       padding: .8rem 0;
+      color: var(--colorWhite);
     }
   }
 

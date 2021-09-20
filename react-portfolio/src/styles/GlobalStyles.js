@@ -19,6 +19,8 @@ const GlobalStyle = createGlobalStyle`
     --colorBars: #e4e4e4;
     --colorBoton:#00919c;
     --hoverBoton: #093a3e;
+    --projectCard: #e4e4e4;
+    --boxesShadow: #999;
   }   
 
    .dark-theme{
@@ -38,6 +40,8 @@ const GlobalStyle = createGlobalStyle`
     --colorBars: #093a3e;
     --colorBoton:#00919c;
     --hoverBoton: #60e9f8;
+    --projectCard: #093a3e;
+    --boxesShadow: #001011;
   } 
 
   *{

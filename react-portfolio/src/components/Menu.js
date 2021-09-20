@@ -10,6 +10,10 @@ const MenuItemStyled = styled.div`
   .grid-item{
       transform: scale(0.87);
       transition: all .3s ease-in-out;
+      background-color: var(--projectCard);
+      box-shadow: 5px 12px 10px var(--boxesShadow);
+      padding: 1.8rem .8rem;
+      border-radius: 10px;
       &:hover{
         transform: scale(0.90)
       }

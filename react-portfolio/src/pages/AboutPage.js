@@ -32,6 +32,7 @@ const ImageContainer = styled.div`
   align-items: center;
   justify-content: center;
   background-color: var(--sideDark);
+  box-shadow: 5px 12px 10px var(--boxesShadow);
   height: 22rem;
   img{
     width: 50%;
