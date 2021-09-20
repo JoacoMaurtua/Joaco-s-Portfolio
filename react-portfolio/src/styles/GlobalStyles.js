@@ -97,7 +97,7 @@ const GlobalStyle = createGlobalStyle`
   .light-dark-mode{
     position: fixed;
     right: 0;
-    top: 10%;
+    top: 50%;
     background-color: #3aafb9;
     width: 6.5rem;
     height: 2.5rem;
@@ -112,6 +112,28 @@ const GlobalStyle = createGlobalStyle`
       color: var(--whiteColor);
     }
   }
+
+  //Nav toggler
+
+  @media screen and (max-width:1200px){
+    
+  }
+  .ham-menu{
+    position: absolute;
+    right: 5%;
+    top:5%;
+    z-index: 15;
+    svg{
+      font-size: 2.5rem;
+      color: var(--primaryColor);
+    }
+  }
+
+  .nav-toggle{
+    transform: translateX(0);
+    z-index: 20;
+  }
+
 
 `;
 
