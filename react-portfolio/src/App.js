@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState,useEffect,createContext} from 'react';
 import SideBar from './components/SideBar';
 import styled from 'styled-components';
 import HomePage from './pages/HomePage';
@@ -8,7 +8,9 @@ import PortfoliosPage from './pages/PortfoliosPage';
 import ContactPage from './pages/ContactPage';
 import { Switch as Switching, Route } from 'react-router-dom';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
-import Switch from '@material-ui/core/Switch'
+import Switch from '@material-ui/core/Switch';
+
+export const MyContext = createContext();
 
 
 const MainContentStyled = styled.main`
@@ -37,46 +39,50 @@ function App() {
 
   return (
     <div className="App">
-      <SideBar />
-      <div className="theme">
-        <div className="light-dark-mode">
-              <div className="left-content">
-                <Brightness4Icon/>
-              </div>
-              <div className="right-content">
-                <Switch
-                  style={{color:'var(--primaryColor)'}}
-                  value=""
-                  checked={checked}
-                  onClick={themeToggler}
-                  inputProps={{'aria-label':''}}
-                  size="medium"
-                
-                />  
-              </div>
-          </div>
-      </div>
-      
-      <MainContentStyled>
+      <MyContext.Provider value={{theme,setTheme}}>
+        <SideBar />
+        <div className="theme">
+          <div className="light-dark-mode">
+                <div className="left-content">
+                  <Brightness4Icon/>
+                </div>
+                <div className="right-content">
+                  <Switch
+                    style={{color:'var(--primaryColor)'}}
+                    value=""
+                    checked={checked}
+                    onClick={themeToggler}
+                    inputProps={{'aria-label':''}}
+                    size="medium"
+                  
+                  />  
+                </div>
+            </div>
+        </div>
+        
+        <MainContentStyled>
 
-          <Switching>
-            <Route path="/" exact>
-                <HomePage />
-            </Route>
-            <Route exact path="/about">
-                <AboutPage /> 
-            </Route>
-            <Route exact path="/resume">
-                <ResumePage />
-            </Route>
-            <Route exact path="/portfolios">
-                <PortfoliosPage />
-            </Route>
-            <Route exact path="/contact">
-                <ContactPage />
-            </Route>
-          </Switching>
-      </MainContentStyled>
+            <Switching>
+              <Route path="/" exact>
+                  <HomePage />
+              </Route>
+              <Route exact path="/about">
+                  <AboutPage /> 
+              </Route>
+              <Route exact path="/resume">
+                  <ResumePage />
+              </Route>
+              <Route exact path="/portfolios">
+                  <PortfoliosPage />
+              </Route>
+              <Route exact path="/contact">
+                  <ContactPage />
+              </Route>
+            </Switching>
+        </MainContentStyled>
+
+      </MyContext.Provider>
+      
     </div>
   );
 }

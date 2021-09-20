@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { MyContext } from '../App';
 import Resume from '../components/Resume';
 import Skills from '../components/Skills';
 import { MainLayout } from '../styles/Layouts';
 import Mern from '../images/Mern.png';
+import Mern2 from '../images/Mern-2.png';
 import styled from 'styled-components';
 
 const ImgContainer = styled.div`
@@ -16,11 +18,15 @@ const ImgContainer = styled.div`
 `
 
 export default function ResumePage() {
+  const {theme} = useContext(MyContext);
   return (
     <MainLayout>
       <Skills/>
       <ImgContainer>
-        <img src = {Mern} alt="MERN"/>
+        {
+          theme === 'dark-theme'?<img src = {Mern} alt="MERN"/>:
+          <img src = {Mern2} alt="MERN"/>
+        }
       </ImgContainer>
       <Resume />
     </MainLayout>

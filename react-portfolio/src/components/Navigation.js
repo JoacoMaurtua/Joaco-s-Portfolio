@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { MyContext } from '../App';
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
 import avatar from '../images/avatar.png';
+import avatar2 from '../images/avatar-2.png';
 
 const NavigationStyled = styled.div`
   display: flex;
@@ -94,10 +96,17 @@ const NavigationStyled = styled.div`
 `;
 
 export default function Navigation() {
+
+  const {theme} = useContext(MyContext);
+
   return (
     <NavigationStyled>
       <div className="avatar">
-           <img src={avatar} alt=""/> 
+        {
+          theme === 'dark-theme'? <img src={avatar} alt=""/>:
+          <img src={avatar2} alt=""/>
+        }
+           
       </div>
       <ul className="nav-items">
           <li className="nav-item">
