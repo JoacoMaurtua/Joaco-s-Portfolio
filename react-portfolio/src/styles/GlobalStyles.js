@@ -1,27 +1,8 @@
 import {createGlobalStyle} from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-
-   /* :root{
-    --backGroundDark: #001011;
-    --backGroundItems: #093a3e;
-    --primaryColor:#60e9f8;
-    --secondaryColor: #6c757d;
-    --backDarkColor: #10121a;
-    --borderColor:  #60e9f8;
-    --backLightColor: #f1f1f1;
-    --fontLight: #a4acc4;
-    --fontDark: #313131;
-    --fontDrak2: #151515;
-    --sideDark: #093a3e;
-    --colorWhite: #ffffff;
-    --hoverFont: #fff
-    --colorBars: #093a3e
-    
-  
-  } 
- */
-   *{
+ 
+    .light-theme {
     --backGroundDark: #f1f1f1;
     --backGroundItems: #093a3e;
     --primaryColor:#00919c;
@@ -35,11 +16,14 @@ const GlobalStyle = createGlobalStyle`
     --sideDark: #E4E4E4;
     --colorWhite: #151515;
     --hoverFont: #fff;
-    --colorBars: #e4e4e4
-  } 
+    --colorBars: #e4e4e4;
+    --colorBoton:#00919c;
+    --hoverBoton: #093a3e;
+  }   
 
-  /* .dark-theme{
+   .dark-theme{
     --backGroundDark: #001011;
+    --backGroundItems: #093a3e;
     --primaryColor:#60e9f8;
     --secondaryColor: #6c757d;
     --backDarkColor: #10121a;
@@ -50,8 +34,11 @@ const GlobalStyle = createGlobalStyle`
     --fontDrak2: #151515;
     --sideDark: #093a3e;
     --colorWhite: #ffffff;
-
-  } */
+    --hoverFont: #fff;
+    --colorBars: #093a3e;
+    --colorBoton:#00919c;
+    --hoverBoton: #60e9f8;
+  } 
 
   *{
     padding: 0;

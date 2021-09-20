@@ -81,7 +81,7 @@ const MenuItemStyled = styled.div`
               &:hover{
                 transform: scale(0.90);
                 font-size: 3.5rem;
-                color: var(--primaryColor);
+                color: var(--hoverBoton);
                 transition: all .3s ease-in-out;
               }
             }

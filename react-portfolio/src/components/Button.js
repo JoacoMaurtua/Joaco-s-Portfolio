@@ -13,14 +13,14 @@ const ButtonStyled = styled.button`
   border-radius: 8px;
   font-weight: bold;
   &:active, &:focus{
-    background-color: var(--primaryColor);
+    background-color: var(--hoverBoton);
     color: var(--sideDark);
   };
   &:not(:last-child){
     margin-right: 1rem;
   }
   &:hover{
-    background-color: var(--primaryColor);
+    background-color: var(--hoverBoton);
     color: var(--sideDark);
     font-weight: bold;
   }

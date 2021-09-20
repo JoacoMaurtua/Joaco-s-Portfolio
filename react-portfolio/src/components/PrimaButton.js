@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PrimaryButtonStyled = styled.button`
-  background-color: #00919c;
+  background-color: var(--colorBoton);
   padding: .8rem 2.5rem;
   color: white;
   cursor: pointer;
@@ -27,7 +27,7 @@ const PrimaryButtonStyled = styled.button`
   
   &:hover::after{
     width: 100%;
-    background-color: var(--primaryColor);
+    background-color: var(--hoverBoton);
   }
 
 `;
