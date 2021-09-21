@@ -121,7 +121,7 @@ const GlobalStyle = createGlobalStyle`
   .ham-menu{
     position: absolute;
     right: 4%;
-    top:5%;
+    top:3%;
     z-index: 15;
     svg{
       font-size: 2.5rem;
