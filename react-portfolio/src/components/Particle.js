@@ -9,10 +9,10 @@ function Particle() {
               params={{
                 "particles": {
                   "number": {
-                    "value": 80,
+                    "value": 60,
                     "density": {
                       "enable": true,
-                      "value_area": 900
+                      "value_area": 1000
                     }
                   },
                   "color": {

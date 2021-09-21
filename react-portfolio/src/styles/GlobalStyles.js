@@ -120,7 +120,7 @@ const GlobalStyle = createGlobalStyle`
   }
   .ham-menu{
     position: absolute;
-    right: 5%;
+    right: 4%;
     top:5%;
     z-index: 15;
     svg{

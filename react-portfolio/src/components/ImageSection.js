@@ -7,6 +7,12 @@ const ImageSectionStyled = styled.div`
 
     margin-top: 5rem;
     display: flex;
+    @media screen and (max-width:1000px){
+        flex-direction: column;
+        .left-content{
+            margin-bottom: 2rem;
+        }
+    }
     .left-content{
         width: 100%;
         img{
@@ -32,6 +38,7 @@ const ImageSectionStyled = styled.div`
         .about-info{
             padding-bottom: 1.4rem;
             display: flex;
+           
             padding-bottom: 1.3rem;
             .info-title{
                 padding-right: 3rem;

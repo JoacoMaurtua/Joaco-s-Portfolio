@@ -9,20 +9,19 @@ const SideBarStyled = styled.div`
   background-color: var(--sideDark);
   font-size: 1.3rem !important;
   overflow: hidden;
-  transition: all .4s ease-in-out;
-  @media screen and (max-width:1200px){
-   transform: translateX(-100%);
-   z-index: 20;
+  transition: all 0.4s ease-in-out;
+  @media screen and (max-width: 1200px) {
+    transform: translateX(-100%);
+    z-index: 20;
   }
-
-
-
 `;
 
-export default function SideBar({navToggle}) {
+export default function SideBar({ navToggle }) {
   return (
-      <SideBarStyled className={`${navToggle?'nav-toggle':''}`}>
-      <Navigation/>
+    <SideBarStyled className={`${navToggle ? 'nav-toggle' : ''}`}>
+      <Navigation />
     </SideBarStyled>
-  )
+  );
 }
+
+//00083129000

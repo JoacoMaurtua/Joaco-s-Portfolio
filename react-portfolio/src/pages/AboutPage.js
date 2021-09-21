@@ -22,7 +22,7 @@ export default function AboutPage() {
 }
 
 const AboutStyled = styled.section`
-
+ 
 
 `;
 
