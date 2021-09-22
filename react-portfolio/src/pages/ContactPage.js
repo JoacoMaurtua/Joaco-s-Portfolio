@@ -18,6 +18,16 @@ const ContactPageStyled = styled.section`
       display: grid;
       grid-template-columns: repeat(2,1fr);
       grid-column-gap: 2rem;
+      @media screen and (max-width:978px){
+        grid-template-columns: repeat(1,1fr);
+        .form-button{
+          margin-bottom: .5rem;
+        }
+        .left-content{
+          width: 50%;
+          overflow: hidden;
+        }
+      }
       .p-particles-js{
         position: absolute;
         top: 0;
@@ -73,6 +83,7 @@ const ContactPageStyled = styled.section`
 
           }
         }
+
       }
   }
 
@@ -222,7 +233,7 @@ export default function ContactPage() {
                     
                   ></textarea>
                 </div>
-                <div className="form-field">
+                <div className="form-field form-button">
                     <PrimaButton title={"SEND DATA"} type="submit"/>
                 </div>
               </form>

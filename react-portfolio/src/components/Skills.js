@@ -9,7 +9,10 @@ const SkillsStyled = styled.section`
     grid-template-columns: repeat(2,1fr);
     grid-row-gap: 2rem;
     grid-column-gap: 3rem;
-    color: var(--colorWhite)
+    color: var(--colorWhite);
+    @media screen and (max-width:700px){
+      grid-template-columns: repeat(1,1fr);
+    }
   }
 `;
 

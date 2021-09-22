@@ -14,6 +14,11 @@ const ImgContainer = styled.div`
   img{
     width: 18.75rem;
   }
+  @media screen and (max-width:549px){
+    img{
+      display: none;
+    }
+  }
 
 `
 

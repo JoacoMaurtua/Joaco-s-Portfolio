@@ -6,6 +6,15 @@ const MenuItemStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 2rem;
+
+  @media screen and (max-width:920px){
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  @media screen and (max-width:670px){
+    grid-template-columns: repeat(1,1fr);
+  }
+
   color: var(--colorWhite);
   .grid-item{
       transform: scale(0.87);

@@ -12,6 +12,7 @@ const ButtonStyled = styled.button`
   transition: all .4s ease-in-out;
   border-radius: 8px;
   font-weight: bold;
+  margin-bottom: .6rem;
   &:active, &:focus{
     background-color: var(--hoverBoton);
     color: var(--sideDark);
