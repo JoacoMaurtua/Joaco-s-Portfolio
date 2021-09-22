@@ -92,24 +92,24 @@ const GlobalStyle = createGlobalStyle`
     span{
       font-size: 3rem;
     }
-  }
+  } 
 
   .light-dark-mode{
     position: fixed;
     right: 0;
     top: 50%;
-    background-color: #3aafb9;
+    background-color: #3aafb9;;
     width: 6.5rem;
     height: 2.5rem;
-    z-index:15;
+    z-index: 15;
     display: flex;
     align-items: center;
     justify-content: center;
     svg{
       display: flex;
       align-items: center;
-      font-size:1.7rem;
-      color: var(--whiteColor);
+      font-size: 1.7rem;
+      color: var(--white-color);
     }
   }
 
@@ -122,6 +122,7 @@ const GlobalStyle = createGlobalStyle`
     position: absolute;
     right: 4%;
     top:3%;
+    display: none;
     z-index: 15;
     svg{
       font-size: 2.5rem;
@@ -132,6 +133,12 @@ const GlobalStyle = createGlobalStyle`
   .nav-toggle{
     transform: translateX(0);
     z-index: 20;
+  }
+
+  @media screen and (max-width:1200px){
+    .ham-menu{
+      display: block;
+    }
   }
 
 

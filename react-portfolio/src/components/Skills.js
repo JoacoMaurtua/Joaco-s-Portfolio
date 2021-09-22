@@ -20,7 +20,7 @@ export default function Skills() {
   return (
     <SkillsStyled>
       
-        <Title title={'Principal Skills'} span={'Principal Skills'}/>
+        <Title title={'Skills'} span={'Skills'}/>
         <InnerLayout>
           <div className="skills">
             <ProgressBar

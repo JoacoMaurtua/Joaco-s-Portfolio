@@ -13,8 +13,8 @@ import Particle from '../components/Particle';
 const ContactPageStyled = styled.section`
   color: var(--colorWhite);
   .contact-section{
-      position: relative;
-      padding-top: -10px;
+      //contentposition: relative;
+      //padding-top: -10px;
       display: grid;
       grid-template-columns: repeat(2,1fr);
       grid-column-gap: 2rem;
