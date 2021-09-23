@@ -9,7 +9,7 @@ const allButtons = ['All', ...new Set(projects.map(item => item.category))]
 
 export default function PortfoliosPage() {
   const [menuItem, setMenuItems] = useState(projects);
-    const [button, setButtons] = useState(allButtons);
+  const [button, setButtons] = useState(allButtons);
 
     const filter = (button) => {
 

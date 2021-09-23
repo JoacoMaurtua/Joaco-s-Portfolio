@@ -3,7 +3,7 @@ import {createGlobalStyle} from 'styled-components';
 const GlobalStyle = createGlobalStyle`
  
     .light-theme {
-    --backGroundDark: #f1f1f1;
+    --backGroundDark: #ececec;
     --backGroundItems: #093a3e;
     --primaryColor:#00919c;
     --secondaryColor: #292929;
@@ -13,13 +13,13 @@ const GlobalStyle = createGlobalStyle`
     --fontLight: #a4acc4;
     --fontDark: #313131;
     --fontDrak2: #151515;
-    --sideDark: #E4E4E4;
+    --sideDark: #9f9fa0;
     --colorWhite: #151515;
     --hoverFont: #fff;
     --colorBars: #e4e4e4;
     --colorBoton:#00919c;
     --hoverBoton: #093a3e;
-    --projectCard: #e4e4e4;
+    --projectCard: #ffffff;
     --boxesShadow: #999;
   }   
 
@@ -91,13 +91,20 @@ const GlobalStyle = createGlobalStyle`
     font-size: 3rem;
     span{
       font-size: 3rem;
+      @media screen and (max-width: 502px){
+        font-size: 2rem;
+      }
+    }
+    @media screen and (max-width: 502px){
+     font-size: 2rem;
+     
     }
   } 
 
   .light-dark-mode{
     position: fixed;
     right: 0;
-    top: 50%;
+    top: 20%;
     background-color: #3aafb9;;
     width: 6.5rem;
     height: 2.5rem;

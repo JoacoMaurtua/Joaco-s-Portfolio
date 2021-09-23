@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const TitleStyled = styled.div`
   position: relative;
-  margin-top:2.5rem;
+  
   h2{
     color: var(--colorWhite);
     font-size: 3.5rem;

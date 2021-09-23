@@ -45,7 +45,7 @@ const NavigationStyled = styled.div`
         background-color: var(--primaryColor);
       }
       a{
-        color: var(--colorWhite);
+        color: white;
         display: block;
         padding: .45rem 0;
         position: relative;
@@ -66,7 +66,7 @@ const NavigationStyled = styled.div`
           height: 50%;
           background-color: var(--primaryColor);
           transition: all 0.6s cubic-bezier(1,-0.2,.25,.95);
-          z-index: 3;
+          z-index: -1;
           opacity: 0.20;
           transform-origin: right;
         }
@@ -89,7 +89,7 @@ const NavigationStyled = styled.div`
       font-size: 1.1rem;
       display: block;
       text-align: center;
-      color: var(--colorWhite);
+      color: white;
     }
   }
   
