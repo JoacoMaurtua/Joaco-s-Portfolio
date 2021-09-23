@@ -13,8 +13,6 @@ import Particle from '../components/Particle';
 const ContactPageStyled = styled.section`
   color: var(--colorWhite);
   .contact-section{
-      //contentposition: relative;
-      //padding-top: -10px;
       display: grid;
       grid-template-columns: repeat(2,1fr);
       grid-column-gap: 2rem;
@@ -22,10 +20,6 @@ const ContactPageStyled = styled.section`
         grid-template-columns: repeat(1,1fr);
         .form-button{
           margin-bottom: .5rem;
-        }
-        .left-content{
-          width: 50%;
-          overflow: hidden;
         }
       }
       .p-particles-js{
@@ -36,9 +30,14 @@ const ContactPageStyled = styled.section`
         margin-left: 17rem;
        }
       .right-content{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        @media screen and (max-width:502px){
+          width:70%;
+        }
+
       }
+        
       .contact-title{
         h4{
           color: var(--colorWhite);
@@ -48,6 +47,9 @@ const ContactPageStyled = styled.section`
       }
       .form{
         width: 100%;
+        @media screen and (max-width:502px){
+          width: 100%;
+        }
         .form-field{
           margin-top: 2.2rem;
           position: relative;

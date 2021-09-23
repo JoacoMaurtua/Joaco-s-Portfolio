@@ -3,6 +3,11 @@ import styled from 'styled-components';
 
 const ResumeItemStyled = styled.div`
   display: flex;
+  @media screen and (max-width:421px){
+      p, h5, h6{
+        font-size:80%;
+      }
+  }
   color: var(--colorWhite);
   margin-bottom: 3rem;
   
@@ -30,6 +35,7 @@ const ResumeItemStyled = styled.div`
     margin-left: .5rem;
     padding-left: 6.5rem;
     position: relative;
+  
     &::before{
         content: "";
         position: absolute;
@@ -38,6 +44,9 @@ const ResumeItemStyled = styled.div`
         height: 2px;
         width: 2rem;
         background-color: var(--borderColor);
+        @media screen and (max-width:815px){
+            margin-left: 2rem;
+        }
 
     }
     h5{

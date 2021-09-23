@@ -11,6 +11,9 @@ const ContactItemStyled = styled.div`
     }
     &:first-child{
       margin-top: 6.8rem;
+      @media (max-width: 977px) {
+        margin-top: 2.5rem;
+      }
     }
     padding: 1.5rem 2rem;
     background-color: var(--sideDark);
