@@ -13,7 +13,7 @@ export default function PortfoliosPage() {
 
     const filter = (button) => {
 
-        if(button === 'All'){
+        if(button === 'FullStack'){
             setMenuItems(projects);
             return;
         }

@@ -6,7 +6,7 @@ const SideBarStyled = styled.div`
   width: 16rem;
   height: 100vh;
   position: fixed;
-  background-color: var(--sideDark);
+  background-color: var(--navigation);
   font-size: 1.3rem !important;
   overflow: hidden;
   transition: all 0.4s ease-in-out;

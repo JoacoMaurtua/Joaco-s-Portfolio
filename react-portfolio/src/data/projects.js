@@ -7,7 +7,7 @@ import gameApp from '../images/game-app.PNG'
 const projects = [
   {
     id:1,
-    category: 'MERN APP',
+    category: 'FullStack',
     image: restoApp,
     link: 'https://github.com/JoacoMaurtua/Resto-App',
     title: 'Nice restorant app web site',
@@ -16,7 +16,7 @@ const projects = [
 
   {
     id:2,
-    category: 'MERN APP',
+    category: 'FullStack',
     image: chifaApp,
     link: 'https://github.com/JoacoMaurtua/ChifaPage',
     title: 'Real project developed for a local restaurant',
@@ -25,7 +25,7 @@ const projects = [
 
   {
     id:3,
-    category: 'MERN APP',
+    category: 'FullStack',
     image: taskApp,
     link: 'https://github.com/JoacoMaurtua/task-manager-contextAPI',
     title: 'Website designed to create, update and delete a to-do list',
@@ -34,7 +34,7 @@ const projects = [
 
   {
     id:4,
-    category: 'Frontend App',
+    category: 'Frontend',
     image: restoApp,
     link: 'https://github.com/JoacoMaurtua/Resto-App',
     title: 'Nice restorant app web site',
@@ -61,7 +61,7 @@ const projects = [
 
   {
     id:7,
-    category: 'Frontend App',
+    category: 'Frontend',
     image: restoApp,
     link: 'https://github.com/JoacoMaurtua/Resto-App',
     title: 'Nice restorant app web site',

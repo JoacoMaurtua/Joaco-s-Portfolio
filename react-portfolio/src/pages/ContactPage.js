@@ -26,7 +26,7 @@ const ContactPageStyled = styled.section`
         position: absolute;
         top: 0;
         left:0;
-        margin-top: -38rem;
+        margin-top: -24rem;
         margin-left: 17rem;
        }
       .right-content{

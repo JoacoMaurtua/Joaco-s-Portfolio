@@ -22,8 +22,13 @@ const ButtonStyled = styled.button`
   }
   &:hover{
     background-color: var(--hoverBoton);
-    color: var(--sideDark);
     font-weight: bold;
+  }
+
+  @media screen and (max-width:670px){
+    &:not(:last-child){
+      margin-right: 0;
+    }
   }
 `;
 
@@ -36,8 +41,6 @@ const ButtonsStyled = styled.div`
     margin: 2.5rem auto;
 
 `;
-
-
 
 export default function Button({filter,button}) {
   return (

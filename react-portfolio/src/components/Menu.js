@@ -6,6 +6,7 @@ const MenuItemStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 2rem;
+  
 
   @media screen and (max-width:920px){
     grid-template-columns: repeat(2,1fr);
@@ -23,6 +24,7 @@ const MenuItemStyled = styled.div`
       box-shadow: 5px 12px 10px var(--boxesShadow);
       padding: 1.8rem .8rem;
       border-radius: 10px;
+      
       &:hover{
         transform: scale(0.90)
       }

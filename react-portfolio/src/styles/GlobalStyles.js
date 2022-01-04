@@ -3,6 +3,8 @@ import {createGlobalStyle} from 'styled-components';
 const GlobalStyle = createGlobalStyle`
  
     .light-theme {
+    --navigation: #00919c;
+    --navHover: #093a3e;
     --backGroundDark: #ececec;
     --backGroundItems: #093a3e;
     --primaryColor:#00919c;
@@ -18,12 +20,15 @@ const GlobalStyle = createGlobalStyle`
     --hoverFont: #fff;
     --colorBars: #e4e4e4;
     --colorBoton:#00919c;
-    --hoverBoton: #093a3e;
+    --hoverBoton: #60e9f8;
     --projectCard: #ffffff;
     --boxesShadow: #999;
+    --contactBoX: #fff;
   }   
 
    .dark-theme{
+    --navigation: #093a3e;
+    --navHover:#00919c;
     --backGroundDark: #001011;
     --backGroundItems: #093a3e;
     --primaryColor:#60e9f8;
@@ -42,6 +47,7 @@ const GlobalStyle = createGlobalStyle`
     --hoverBoton: #60e9f8;
     --projectCard: #093a3e;
     --boxesShadow: #001011;
+    --contactBoX: #093a3e;
   } 
 
   *{

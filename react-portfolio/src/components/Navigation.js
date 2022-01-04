@@ -42,7 +42,7 @@ const NavigationStyled = styled.div`
     li{
       display: block;
       &:hover{
-        background-color: var(--primaryColor);
+        background-color: var(--navHover);
       }
       a{
         color: white;

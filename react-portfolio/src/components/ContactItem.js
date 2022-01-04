@@ -5,6 +5,7 @@ const ContactItemStyled = styled.div`
     border-top: 6px solid #00919c; 
     border-radius: 6px;
     transition: all .4s ease-in-out;
+    box-shadow: 5px 12px 10px var(--boxesShadow);
     &:hover{
       border-top: 5px solid var(--borderColor); 
       transform: translateY(3px);
@@ -16,7 +17,7 @@ const ContactItemStyled = styled.div`
       }
     }
     padding: 1.5rem 2rem;
-    background-color: var(--sideDark);
+    background-color: var(--contactBoX);
     display: flex;
     align-items: center;
     &:not(:last-child){
